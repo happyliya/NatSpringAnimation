@@ -1,0 +1,6 @@
+framework module Pods_NatSpringAnimation {
+  umbrella header "Pods-NatSpringAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

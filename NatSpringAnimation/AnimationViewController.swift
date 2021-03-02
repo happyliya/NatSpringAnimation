@@ -23,6 +23,7 @@ class AnimationViewController: UIViewController {
 
     @IBAction func runButtonPressed(_ sender: UIButton) {
         infoLabel.text = animation.description
+        print("\(animation.name)")
         
         animationView.animation = animation.name
         animationView.curve = animation.curve
