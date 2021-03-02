@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23BADBC20E01DE31D049C4DB /* Pods_NatSpringAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886D4DFA578FFB19A995B04E /* Pods_NatSpringAnimation.framework */; };
+		E907961D25ED73FD00F76E24 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907961C25ED73FD00F76E24 /* Animation.swift */; };
+		E907962025ED760B00F76E24 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907961F25ED760B00F76E24 /* DataManager.swift */; };
 		E9E56BA825ED6007008E0063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E56BA725ED6007008E0063 /* AppDelegate.swift */; };
 		E9E56BAA25ED6007008E0063 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E56BA925ED6007008E0063 /* SceneDelegate.swift */; };
-		E9E56BAC25ED6007008E0063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E56BAB25ED6007008E0063 /* ViewController.swift */; };
+		E9E56BAC25ED6007008E0063 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E56BAB25ED6007008E0063 /* AnimationViewController.swift */; };
 		E9E56BAF25ED6007008E0063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E56BAD25ED6007008E0063 /* Main.storyboard */; };
 		E9E56BB125ED600C008E0063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E56BB025ED600C008E0063 /* Assets.xcassets */; };
 		E9E56BB425ED600C008E0063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E56BB225ED600C008E0063 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		691E1C2DA32F566A9D712FC5 /* Pods-NatSpringAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NatSpringAnimation.debug.xcconfig"; path = "Target Support Files/Pods-NatSpringAnimation/Pods-NatSpringAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		6CD325DA4673FA29644317A4 /* Pods-NatSpringAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NatSpringAnimation.release.xcconfig"; path = "Target Support Files/Pods-NatSpringAnimation/Pods-NatSpringAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		886D4DFA578FFB19A995B04E /* Pods_NatSpringAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NatSpringAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E907961C25ED73FD00F76E24 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		E907961F25ED760B00F76E24 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E9E56BA425ED6007008E0063 /* NatSpringAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatSpringAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E56BA725ED6007008E0063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E56BA925ED6007008E0063 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9E56BAB25ED6007008E0063 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9E56BAB25ED6007008E0063 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		E9E56BAE25ED6007008E0063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9E56BB025ED600C008E0063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E56BB325ED600C008E0063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BADBC20E01DE31D049C4DB /* Pods_NatSpringAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		995C01AF238ED6DD34872C9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				886D4DFA578FFB19A995B04E /* Pods_NatSpringAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5CA11F0E81B3D4F318A6E8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				691E1C2DA32F566A9D712FC5 /* Pods-NatSpringAnimation.debug.xcconfig */,
+				6CD325DA4673FA29644317A4 /* Pods-NatSpringAnimation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E9E56B9B25ED6007008E0063 = {
 			isa = PBXGroup;
 			children = (
 				E9E56BA625ED6007008E0063 /* NatSpringAnimation */,
 				E9E56BA525ED6007008E0063 /* Products */,
+				E5CA11F0E81B3D4F318A6E8A /* Pods */,
+				995C01AF238ED6DD34872C9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +86,13 @@
 			children = (
 				E9E56BA725ED6007008E0063 /* AppDelegate.swift */,
 				E9E56BA925ED6007008E0063 /* SceneDelegate.swift */,
-				E9E56BAB25ED6007008E0063 /* ViewController.swift */,
+				E9E56BAB25ED6007008E0063 /* AnimationViewController.swift */,
 				E9E56BAD25ED6007008E0063 /* Main.storyboard */,
+				E907961C25ED73FD00F76E24 /* Animation.swift */,
 				E9E56BB025ED600C008E0063 /* Assets.xcassets */,
 				E9E56BB225ED600C008E0063 /* LaunchScreen.storyboard */,
 				E9E56BB525ED600C008E0063 /* Info.plist */,
+				E907961F25ED760B00F76E24 /* DataManager.swift */,
 			);
 			path = NatSpringAnimation;
 			sourceTree = "<group>";
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9E56BB825ED600C008E0063 /* Build configuration list for PBXNativeTarget "NatSpringAnimation" */;
 			buildPhases = (
+				CFFA19A4BC0613F3B43557CD /* [CP] Check Pods Manifest.lock */,
 				E9E56BA025ED6007008E0063 /* Sources */,
 				E9E56BA125ED6007008E0063 /* Frameworks */,
 				E9E56BA225ED6007008E0063 /* Resources */,
+				42EC82801CCB32AA9EEC58F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +164,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42EC82801CCB32AA9EEC58F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NatSpringAnimation/Pods-NatSpringAnimation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NatSpringAnimation/Pods-NatSpringAnimation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NatSpringAnimation/Pods-NatSpringAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFFA19A4BC0613F3B43557CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NatSpringAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9E56BA025ED6007008E0063 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E56BAC25ED6007008E0063 /* ViewController.swift in Sources */,
+				E9E56BAC25ED6007008E0063 /* AnimationViewController.swift in Sources */,
+				E907962025ED760B00F76E24 /* DataManager.swift in Sources */,
 				E9E56BA825ED6007008E0063 /* AppDelegate.swift in Sources */,
+				E907961D25ED73FD00F76E24 /* Animation.swift in Sources */,
 				E9E56BAA25ED6007008E0063 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +359,7 @@
 		};
 		E9E56BB925ED600C008E0063 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691E1C2DA32F566A9D712FC5 /* Pods-NatSpringAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +378,7 @@
 		};
 		E9E56BBA25ED600C008E0063 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD325DA4673FA29644317A4 /* Pods-NatSpringAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
